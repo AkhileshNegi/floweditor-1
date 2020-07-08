@@ -15,6 +15,9 @@ if (typeof customElements !== 'undefined' && !customElements.get('temba-textinpu
 }
 
 window.showFlowEditor = (ele, config) => {
+  console.log(config);
+  console.log(JSON.stringify(config));
+
   ReactDOM.render(<FlowEditor config={config} />, ele);
 };
 

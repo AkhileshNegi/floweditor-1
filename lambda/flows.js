@@ -47,4 +47,7 @@ const flowsHandler = (req = {}, cb) => {
   return cb(null, getOpts({ body: JSON.stringify({ results: assetList }) }));
 };
 
-exports.handler = (evt, ctx, cb) => flowsHandler(evt, cb);
+exports.handler = (evt, ctx, cb) => {
+  console.log('Flow called');
+  flowsHandler(evt, cb);
+};
