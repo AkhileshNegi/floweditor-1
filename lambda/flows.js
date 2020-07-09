@@ -23,11 +23,12 @@ const assetContent = {
 };
 
 const getFlow = uuid => {
-  for (const flowResp of assetContent) {
-    if (flowResp.uuid === uuid) {
-      return flowResp;
+  for (var i in assetContent) {
+    if (i === uuid) {
+      return assetContent[i];
     }
   }
+
   return false;
 };
 
@@ -48,6 +49,5 @@ const flowsHandler = (req = {}, cb) => {
 };
 
 exports.handler = (evt, ctx, cb) => {
-  console.log('Flow called');
   flowsHandler(evt, cb);
 };

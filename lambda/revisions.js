@@ -20,7 +20,7 @@ const defination_2 = {
   language: 'eng',
   type: 'message',
   spec_version: '13.1.0',
-  uuid: 'a4f64f1b-85bc-477e-b706-de313a022978',
+  uuid: 'a4f64f1b-85bc-477e-b706-de313a022972',
   localization: {},
   nodes: [
     {
@@ -374,7 +374,7 @@ exports.handler = (request, context, callback) => {
 
   if (match && match.length > 1) {
     let body = JSON.stringify(assetContent[match[1]], null, 1);
-    respond(callback, body);
+    respond(callback, assetContent[match[1]]);
   } else {
     respond(callback, { results: assetList });
   }

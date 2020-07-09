@@ -119,8 +119,9 @@
 <script>
   var base = '/.netlify/functions/';
   var base_glific = "http://localhost:4000/api/v1/flow-editor/";
+  // base_glific = base;
   var config = {
-    flow: 'a4f64f1b-85bc-477e-b706-de313a022978',
+    flow: 'a4f64f1b-85bc-477e-b706-de313a022972',
     flowType: 'message',
     localStorage: true,
     mutable: true,
@@ -131,30 +132,26 @@
       invalid_regex: 'help.html'
     },
     endpoints: {
-      globals: base + 'globals',
-      groups: base + 'groups',
-      fields: base + 'fields',
-      labels: base + 'labels',
-      channels: '',
-      classifiers: base + 'classifiers',
-      ticketers: '',
-      resthooks: base + 'resthooks',
-      templates: base + 'templates',
-      flows: '',
-      revisions: base + 'revisions',
-      recents: base + 'recents',
-      languages: base + 'languages',
-      environment: base + 'environment',
-      recipients: base + 'recipients',
-      functions: base + 'functions',
-      completion: base + 'completion',
-      attachments: base + 'attachments',
-      activity: base + 'activity',
-
+      simulateStart: true,
+      simulateResume: true,
+      globals: base_glific + 'globals',
+      groups: base_glific + 'groups',
+      fields: base_glific + 'fields',
+      labels: base_glific + 'labels',
+      channels: base_glific + 'channels',
+      classifiers: base_glific + 'classifiers',
+      ticketers: base_glific + 'ticketers',
+      resthooks: base_glific + 'resthooks',
+      templates: base_glific + 'templates',
+      languages: base_glific + 'languages',
+      environment: base_glific + 'environment',
+      recipients: base_glific + 'recipients',
+      completion: base_glific + 'completion',
+      activity: base_glific + 'activity',
+      flows: base_glific + 'flows',
+      revisions: base_glific + 'revisions',
+      functions: base_glific + 'functions',
       editor: '/',
-
-      simulateStart: null,
-      simulateResume: null
     }
   };
 

@@ -3,6 +3,9 @@ const templates = [
   {
     uuid: '9c22b594-fcab-4b29-9bcb-ce4404894a80',
     name: 'revive_issue',
+    created_on: '2019-04-02T22:14:31.549213Z',
+    modified_on: '2019-04-02T22:14:31.569739Z',
+
     translations: [
       {
         language: 'eng',
@@ -24,9 +27,7 @@ const templates = [
           name: 'WhatsApp'
         }
       }
-    ],
-    created_on: '2019-04-02T22:14:31.549213Z',
-    modified_on: '2019-04-02T22:14:31.569739Z'
+    ]
   }
 ];
 
